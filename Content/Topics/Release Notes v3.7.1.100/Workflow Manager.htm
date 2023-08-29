@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="366" MadCap:lastWidth="1424">
+    <head>
+    </head>
+    <body>
+        <h1>Workflow Manager</h1>
+        <p>The following enhancement is now available in the Workflow Manager solution. </p>
+        <h2>User Blacklist Rights and the nightly Workflow Heartbeat job <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-57224</MadCap:conditionalText></h2>
+        <p>The system now takes into account the User Blacklist Rights that is used for the nightly Workflow Heartbeat job to determine if a Price Action, Promotion, or Event should be automatically advanced to the next Workflow Status based on the appropriate solution object's current Status State:</p>
+        <p>The system will evaluate the user's User Right to 'Modify Status' based on the solution object's current Status’ State:</p>
+        <ul>
+            <li>
+                <p>If the Job User does not have User Rights to 'Modify Status' based on the current Status State nor permission to the Transition, the system <b>will not</b> change to the next Workflow Status.</p>
+            </li>
+            <li>
+                <p>If the Job User has User Rights to 'Modify Status' based on the current Status State AND permission to the Transition, the system <strong>will</strong> change to the next Workflow Status.</p>
+            </li>
+        </ul>
+    </body>
+</html>

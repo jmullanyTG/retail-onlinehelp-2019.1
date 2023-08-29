@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="685" MadCap:lastWidth="1207">
+    <head>
+    </head>
+    <body>
+        <h1>Allocation</h1>
+        <p>The following enhancements are now available in the Allocation solution. </p>
+        <h2>Creating Save Points for Allocation Strategies <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-55963</MadCap:conditionalText></h2>
+        <p>A new column on the Allocation Strategy screen labeled Create Save Point gives users the ability to create a Save Point. If a user selects Create Save Point for a particular strategy and then clicks Save, the system takes all the information relating to the strategy including location exceptions and saves the setings for the strategy. Users can then go to the Allocation Strategy Save Point screen and mass apply a Save Point to all the variants in the Item Filter.  </p>
+        <p>The Create Save Point Before Restore function creates another Save Point saving variant settings before a restore.</p>
+        <h2>Demand Transference</h2>
+        <p>Users can now consider Demand Transference within the Allocations solution. To include or exclude this logic, navigate to Management &gt; Inventory Manager and select the Consider Demand Transference checkbox for one or more items. </p>
+        <h2>Product Model Calculation</h2>
+        <p>By default (system policy Allocate.ProductModel.UseAdvanced is set to False), the product model calculation uses the MEDIAN to produce the average values. If the new system policy Allocate.ProductModel.UseAdvanced is set to True, then the calculation will use the MEAN.</p>
+        <h3>Two new columns have been added to the Product Model grid</h3>
+        <p>The new column <b>Include Inner Zeros</b> lets you selectively include or exclude inner zero periods from the consideration sample. New column <b>Include Lost Sales</b> allows for the inclusion of lost sales in the product model calculation, potentially preventing a situation wherein a store was out of stock and thus negatively affecting the product model.</p>
+    </body>
+</html>

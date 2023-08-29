@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="555" MadCap:lastWidth="1371">
+    <head>
+        <link href="../../Resources/TableStyles/jeTables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Breaking Changes</h1>
+        <h2>Assortment, MFP&#160;All Plan Types <MadCap:conditionalText MadCap:conditions="General.Exclude from Print">DMDEV-57069</MadCap:conditionalText></h2>
+        <p>For 2019.1 onwards, the menus have been reorganized for a consistent user experience. For more information, refer to <MadCap:xref href="General Enhancements.htm#Menu">Menu reorganization </MadCap:xref>.</p>
+        <h2>Assortment </h2>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="General.Exclude from Print">DMDEV-59371.</MadCap:conditionalText> Sites that are specifically excluded within Assortment planning now remain so. This is based on a new system policy. If the new system policy is enabled, then when a site that has been excluded moves from one cluster to another cluster it remains excluded. </p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-jeTables" cellspacing="0">
+            <col class="TableStyle-jeTables-Column-Column1" />
+            <col class="TableStyle-jeTables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-jeTables-Head-Header1">
+                    <th class="TableStyle-jeTables-HeadE-Column1-Header1">Policy</th>
+                    <th class="TableStyle-jeTables-HeadD-Column1-Header1">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-jeTables-Body-Body1">
+                    <td class="TableStyle-jeTables-BodyB-Column1-Body1">Allow Strict Site Exclusion</td>
+                    <td class="TableStyle-jeTables-BodyA-Column1-Body1">Maintenance &gt;&#160;Policies &gt; Module: Assortment</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Recommendation to create new User ID to run the nightly Workflow Heartbeat job</h2>
+        <p>Prior to 2019.1, the trigger method "Auto Advance Node Status by Completion Days Out for Workflow Triggers" used the User ID that last modified the promotion or price when determining whether to automatically advance a status to the next status. The user’s permissions and ability to modify promotions were modified as a result of the status being advanced. </p>
+        <p>As of 2019.1, the system now uses the specific User ID that is attached to the Workflow Heartbeat. By default, this User ID is set to 1 (IOAdmin). To avoid unintentionally changing permissions on IOAdmin, it is recommended that a separate User ID be created and attached to the Workflow Heartbeat. </p>
+    </body>
+</html>

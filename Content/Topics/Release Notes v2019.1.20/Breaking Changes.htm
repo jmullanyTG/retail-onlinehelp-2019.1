@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="291" MadCap:lastWidth="1205">
+    <head>
+    </head>
+    <body>
+        <h1>Breaking Changes</h1>
+        <h2>Forecasts</h2>
+        <p MadCap:conditions="General.Temp Exclude">DMDEV-61680</p>
+        <p>There is a new accuracy field OneNumberAccuracy on tbl_Forecast_Detail. Any custom procedures that are populating the SystemAccuracy field on tbl_Forecast_Metrics will need to be updated to populate the new field.</p>
+        <p>The file to modify is usp_Forecast_Select_ForecastDetail.sql.</p>
+    </body>
+</html>

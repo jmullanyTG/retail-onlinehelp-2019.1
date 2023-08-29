@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2569" MadCap:lastWidth="1332">
+    <head>
+        <link href="../../Resources/TableStyles/jeTables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Price &amp; Markdown</h1>
+        <p>The following enhancements are now available in the Price Manager solution. </p>
+        <h2>Reviewing Validation failures<MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-58706</MadCap:conditionalText><![CDATA[  ]]><MadCap:conditionalText MadCap:conditions="General.Temp Exclude">dmdev-50129-5</MadCap:conditionalText></h2>
+        <p>A new Validation Severity column displays a  Validation failure severity state as well as which failures have been reviewed for:</p>
+        <ul>
+            <li>Price Actions</li>
+            <li>Site Clusters</li>
+            <li>Variants</li>
+            <li>Item Masters</li>
+            <li>Inventories</li>
+        </ul>
+        <p>The following are the Validation Severity icons for failures not yet reviewed:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Validation Severity Icon</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1" style="text-align: left;">
+                        <img src="../../Resources/Images/Price Planning1/information icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1" style="text-align: left;">Information Provided</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:pattern="1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1" style="text-align: left;">
+                        <img src="../../Resources/Images/Price Planning1/warning icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1" style="text-align: left;">Warning Encountered</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1" style="text-align: left;">
+                        <img src="../../Resources/Images/Price Planning1/error icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1" style="text-align: left;">Error Found</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The following are the Validation Severity icons for failures that have been reviewed:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Validation Severity Icon</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/information reviewed icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Information Reviewed</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/warning reviewed.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Warning Reviewed</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/error reviewed.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Error Reviewed</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Reducing the number of reviews of Validation failures <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-50121</MadCap:conditionalText> <![CDATA[ ]]></h2>
+        <p>Users have the ability to approve (override) Validation failures and, therefore, reducing the number of reviews needed throughout the lifecycle of the Price Action.</p>
+        <p>There is a check box labeled <b>Allow Validation Override</b> for each of the following:</p>
+        <ul>
+            <li>Information</li>
+            <li>Warning</li>
+            <li>Error</li>
+        </ul>
+        <h2>Filtering product Validation failures based on where the Validation Log originated <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-58717</MadCap:conditionalText> <![CDATA[ ]]></h2>
+        <p>You can now filter product Validation failures based on where  the Validation Log originated so that you only see specific product validation failures to speed up the review process.</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Level</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Filter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Plan</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">All Price Action Validation failures, at the Inventory level, for ALL Site Clusters</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Price Action</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">All Site Cluster Validation failures, at the Inventory level, for ALL Site Clusters</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Site Cluster</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">All Variant's Item Master's Inventory Validation failures for the specific Site Cluster</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Variant</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">All associated Item Masters' Inventory Validation failures for the specific Site Cluster</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">Item Master</td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">All associated Inventory Validation failures for the specific Site Cluster</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Inventory</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Validation failures for the specific Site Cluster</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Validation logs <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-57489</MadCap:conditionalText></h2>
+        <p> New advanced filtering has been added to the Validation Log to let users review and mark as reviewed validation failure records allowing Promotions to continue to downstream systems.  Additionally, the Validation log now returns large record sets. The new filters are: </p>
+        <ul>
+            <li>Error Encountered</li>
+            <li>Error Overridden</li>
+            <li>Warning Found</li>
+            <li>Warning Overridden</li>
+            <li>Information Provided</li>
+            <li>Information Overridden</li>
+        </ul>
+        <p>Users can select multiple filters as required.</p>
+        <h2>Cloning price actions <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56492</MadCap:conditionalText></h2>
+        <p>Price actions can now be cloned on the Price Manager Actions screen. Clicking the Clone button lets users quickly create a new price action based on an existing price action. Users require the access to create price actions. All Price Action Strategy values will remain intact while the system evaluates any change to Cost and Price based on the new Price Action Start Date.</p>
+        <h2>Price Strategy User\Role Restrictions <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-56907</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56906</MadCap:conditionalText></h2>
+        <p>Users can now be restricted to which price strategies they can use via a new button labeled Edit (User Access column) on the Price Strategies tab on the Price Manager Configuration screen. </p>
+        <p>To access the Price Manager Configuration screen, select Influence&#160;&gt; Price and Markdown &gt; Configuration. On the Price Strategies tab, click Edit to display the Remove User Rights screen in which you add or remove user access to particular price strategies.</p>
+        <p>Users will only have visibility to those price strategies for which they have access. When creating a new Price Action, the strategies that display in the Price Action Strategy dropdown list on the Create New Price Action screen are filtered based on the user’s access.</p>
+        <h2>Restrictions on special characters removed <MadCap:conditionalText MadCap:conditions="General.Temp Exclude"><MadCap:conditionalText MadCap:conditions="General.Exclude from Print">DMDEV-57805</MadCap:conditionalText></MadCap:conditionalText> <![CDATA[ ]]></h2>
+        <p>The constraint preventing users from including special characters in Pricing Plan or Price Action names has been removed.</p>
+        <h2>Automatic saving of Pricing Plans <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56477</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56476</MadCap:conditionalText></h2>
+        <p>To improve the user experience, the system now automatically saves a Pricing Plan when users add or remove a Site using Filters.</p>
+        <h2>Ability to copy Variant Codes from the Product Grid Control <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-57673</MadCap:conditionalText></h2>
+        <p>A new right-click option labeled <b>Copy Column Cell(s)</b> lets users copy Variant Codes from the Product Grid Control. This allows for the creation of a new Price Action for only the copied variants. </p>
+    </body>
+</html>

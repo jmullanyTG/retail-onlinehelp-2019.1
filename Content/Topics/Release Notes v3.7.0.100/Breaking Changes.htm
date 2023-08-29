@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="596" MadCap:lastWidth="1233">
+    <head>
+        <link href="../../Resources/TableStyles/jeTables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Breaking Changes</h1>
+        <h2>Assortment: Excluded sites remain excluded when the cluster is changed <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-59371</MadCap:conditionalText></h2>
+        <p> Sites that are specifically excluded within Assortment planning now remain so. This is based on a new system policy. If the new system policy is enabled, then when a site that has been excluded moves from one cluster to another cluster it remains excluded. </p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Policy</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">Allow Strict Site Exclusion</td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Maintenance &gt;&#160;Policies &gt; Module: Assortment</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Actualization maintenance <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-51459</MadCap:conditionalText></h2>
+        <p>A new maintenance step (method assortment_Maintenance_SystemPolicy_CurrencyIDs) must be added in weekly processing before actualization.</p>
+        <h2>Workflow Manager <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-57224</MadCap:conditionalText> Recommendation to create new User ID to run the nightly Workflow Heartbeat job</h2>
+        <p>The trigger method "Auto Advance Node Status by Completion Days Out for Workflow Triggers" used the User ID that last modified the promotion or price when determining whether to automatically advance a status to the next status. The user’s permissions and ability to modify promotions were modified as a result of the status being advanced. </p>
+        <p>The system now uses the specific User ID that is attached to the Workflow Heartbeat. By default, this User ID is set to 1 (IOAdmin). To avoid unintentionally changing permissions on IOAdmin, it is recommended that a separate User ID be created and attached to the Workflow Heartbeat. </p>
+    </body>
+</html>

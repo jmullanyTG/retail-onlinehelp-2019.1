@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2146" MadCap:lastWidth="1231">
+    <head>
+        <link href="../../Resources/TableStyles/jeTables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Promotion Manager</h1>
+        <p>The following promotion-related enhancements are now available.</p>
+        <h2>Identifying which Price Clusters with Validation failures have been reviewed <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-50113</MadCap:conditionalText></h2>
+        <p>A new Validation Severity column on the Promotion List screen and in the Price Cluster grid displays a Promotion's  Validation failure severity state as well as which failures have been reviewed.</p>
+        <p>The following are the Validation Severity icons for failures not yet reviewed:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Validation Severity Icon</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1" style="text-align: left;">
+                        <img src="../../Resources/Images/Price Planning1/information icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1" style="text-align: left;">Information Provided</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1" MadCap:pattern="1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1" style="text-align: left;">
+                        <img src="../../Resources/Images/Price Planning1/warning icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1" style="text-align: left;">Warning Encountered</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1" style="text-align: left;">
+                        <img src="../../Resources/Images/Price Planning1/error icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1" style="text-align: left;">Error Found</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The following are the Validation Severity icons for failures that have been reviewed:</p>
+        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" />
+            <col class="TableStyle-standard-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Validation Severity Icon</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/information reviewed icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Information Reviewed</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/warning reviewed.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Warning Reviewed</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/error reviewed.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Error Reviewed</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Validation logs <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-57481</MadCap:conditionalText></h2>
+        <p>Advanced filtering has been added to the Validation Log to let users review and mark as reviewed (override) validation failure records allowing Promotions to continue to downstream systems.  Additionally, the Validation log now returns large record sets. The new filters are: </p>
+        <ul>
+            <li>Error Encountered</li>
+            <li>Error Overridden</li>
+            <li>Warning Found</li>
+            <li>Warning Overridden</li>
+            <li>Information Provided</li>
+            <li>Information Overridden</li>
+        </ul>
+        <p>Users can select multiple filters as required.</p>
+        <h3>Exporting Promotions that have a Validation Severity type of Error <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-50110</MadCap:conditionalText></h3>
+        <p style="margin-bottom: 0pt;">The system does not allow Promotions with a failed Validation Severity type of Error to be exported. Price Actions with Validation failures of severity type Error are exportable to downstream systems when all Validation failures of severity type Error have been overridden.</p>
+        <p style="margin-bottom: 0pt;">The following validation states can be exported:</p>
+        <table style="margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" style="width: 30%;" />
+            <col class="TableStyle-standard-Column-Column2" style="width: 30%;" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Validation Severity ID</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/validated icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Validated</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/information icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Information Provided</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/warning icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Warning Encountered</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/information reviewed icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Information Reviewed</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/warning reviewed.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyD-Column2-Body1">Warning Reviewed</td>
+                </tr>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/error reviewed.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Error Reviewed</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The following validation states cannot be exported:</p>
+        <table style="margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/jeTables.css');" class="TableStyle-standard" cellspacing="0">
+            <col class="TableStyle-standard-Column-Column1" style="width: 30%;" />
+            <col class="TableStyle-standard-Column-Column2" style="width: 30%;" />
+            <thead>
+                <tr class="TableStyle-standard-Head-Header1">
+                    <th class="TableStyle-standard-HeadE-Column1-Header1">Validation Severity ID</th>
+                    <th class="TableStyle-standard-HeadD-Column2-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-standard-Body-Body1">
+                    <td class="TableStyle-standard-BodyB-Column1-Body1">
+                        <img src="../../Resources/Images/Price Planning1/error icon.png" />
+                    </td>
+                    <td class="TableStyle-standard-BodyA-Column2-Body1">Error Found</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Promotion strategy restrictions <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-55681</MadCap:conditionalText> <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-55681 DMDEV-55682</MadCap:conditionalText></h2>
+        <p>Users can now be restricted to which promotion strategies they can use via a new button labeled Edit (Edit User Access column) on the Promotion Strategy tab on the Promotion Configuration screen. To access the Promotion Configuration screen, select Influence&#160;&gt; Promotion &gt; Configuration. Click Edit to display the Remove User Rights screen in which you add or remove user access to particular promotion strategies.</p>
+        <p>Users will only have visibility to those promotion strategies for which they have access. When creating a new promotion, the strategies that display in the Promotion Strategy dropdown list on the Create New Promotion screen are filtered based on the user’s access.</p>
+        <h2>Enhancement of the Promotion View Limit message <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56475</MadCap:conditionalText></h2>
+        <p>To enhance the clarity of the message that displays when when five Promotions are open and a user attempts to create a new Promotion, the <b>Promotion View Limit</b> message has been revised as follows:</p>
+        <p>“The Promotion, just created, cannot be viewed at this time as there are five Promotions already open for editing. The Promotion can still be found in the Promotion list for modification after at least one Promotion is closed.”</p>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1586" MadCap:lastWidth="1345">
+    <head>
+    </head>
+    <body>
+        <h1>Price &amp; Markdown</h1>
+        <p>The following enhancements are now available in the Price Manager solution. </p>
+        <h2>Filtering out Pricing Plans based on associated Price Action Status <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56493</MadCap:conditionalText></h2>
+        <p>A column has been added to the Price Planning grid on the Pricing Home screen that filters out Pricing Plans based on associated Price Action Status. The possible statuses are:</p>
+        <ul>
+            <li>Calculation Required</li>
+            <li>Saving</li>
+            <li>Calculating</li>
+            <li>Error Found</li>
+            <li>Warning Encountered</li>
+            <li>Information Provided</li>
+            <li>Error Overridden</li>
+            <li>Warning Overridden</li>
+            <li>Information Overridden</li>
+            <li>Validated</li>
+        </ul>
+        <h2>Cloning price actions <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56492</MadCap:conditionalText> <![CDATA[ ]]></h2>
+        <p>Price actions can now be cloned on the Price Manager Actions screen. Clicking the Clone button lets users quickly create a new price action based on an existing price action. Users require the access to create price actions. All Price Action Strategy values will remain intact while the system evaluates any change to Cost and Price based on the new Price Action Start Date.</p>
+        <h2>Price Strategy User\Role Restrictions <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-56906</MadCap:conditionalText></h2>
+        <p>Users can now be restricted to which price strategies they can use via a new button labeled Edit (User Access column) on the Price Strategies tab on the Price Manager Configuration screen. </p>
+        <p>To access the Price Manager Configuration screen, select Influence&#160;&gt; Price and Markdown &gt; Configuration. On the Price Strategies tab, click Edit to display the Remove User Rights screen in which you add or remove user access to particular price strategies.</p>
+        <p>Users will only have visibility to those price strategies for which they have access. When creating a new Price Action, the strategies that display in the Price Action Strategy dropdown list on the Create New Price Action screen are filtered based on the user’s access.</p>
+        <h2>Validation log <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-57088</MadCap:conditionalText> <![CDATA[ ]]></h2>
+        <p>New filters have been added to the Validation Log to let users review and mark as reviewed validation failure records allowing Promotions to continue to downstream systems.  Additionally, the Validation Log no longer limits the number of records returned. The new filters are: </p>
+        <ul>
+            <li>Error Encountered</li>
+            <li>Warning Found</li>
+            <li>Information Provided</li>
+        </ul>
+        <p>Users can select multiple filters as required.</p>
+        <h2>Restrictions on special characters removed <MadCap:conditionalText MadCap:conditions="General.Temp Exclude"><MadCap:conditionalText MadCap:conditions="General.Exclude from Print">DMDEV-57805</MadCap:conditionalText></MadCap:conditionalText> <![CDATA[ ]]></h2>
+        <p>The constraint preventing users from including special characters in Pricing Plan or Price Action names has been removed.</p>
+        <h2>Automatic saving of Pricing Plans <MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56477</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-56476</MadCap:conditionalText></h2>
+        <p>To improve the user experience, the system now automatically saves a Pricing Plan when users add or remove a Site using Filters.</p>
+        <h2>Creating reporting metrics for specific Pricing Plans and Price Actions<MadCap:conditionalText MadCap:conditions="General.Temp Exclude">DMDEV-50306</MadCap:conditionalText></h2>
+        <p>New functionality allows for the creation of reporting metrics for Specific Plan and Actions.</p>
+        <h2>Ability to copy Variant Codes from the Product Grid Control <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-57673</MadCap:conditionalText></h2>
+        <p>A new right-click option labeled <b>Copy Column Cell(s)</b> lets users copy Variant Codes from the Product Grid Control. This allows for the creation of a new Price Action for only the copied variants. </p>
+    </body>
+</html>

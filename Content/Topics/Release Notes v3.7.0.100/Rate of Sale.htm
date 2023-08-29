@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1348" MadCap:lastWidth="1059">
+    <head>
+    </head>
+    <body>
+        <h1>Rate of Sale (ROS)</h1>
+        <p>The Rate of Sale (ROS) calculator has been enhanced as follows:</p>
+        <h2>Raw and Adjusted ROS calculations</h2>
+        <ul>
+            <li>Seasonality is removed. </li>
+            <li>Many ROS policies in system policy have been removed.</li>
+            <li>Adjusted ROS is affected by all columns.</li>
+            <li>Raw ROS is affected by columns: Scenario Mode, AP, Product Filter, Site Filter, Scenario Type, Cluster Set, and Time Frame.</li>
+            <li>Adjusted ROS now considers sites with different currencies by converting all sales to the currency defined in System Policy &gt; ROS &gt; Currency. Currency will be converted in terms of currency conversion temporal. </li>
+            <li MadCap:conditions="General.Exclude from Print,General.Temp Exclude">Only affects Scenario Type: Revenue</li>
+        </ul>
+        <h2>Days from Phase-in Column</h2>
+        <p>This limits Adjusted ROS to a certain number of days since product phase-in. This also rounds up all days into weeks. Therefore, 8 days from phase-in would be considered 2 weeks.</p>
+        <p>If the inventory phase in date is set to system default, days will start counting from the earliest date specified in the Time Frame column.</p>
+        <h2>Min Weekly Sales</h2>
+        <p>Min Volume Threshold has been renamed Min Weekly Sales. This parameter now deletes individual inventory history weeks rather than whole products based on largest single week. Input is inclusive meaning the system considers the number entered. For example, if the input is 1, ROS will consider weeks with 1 unit sold.</p>
+        <h2>Include Inner Zeros</h2>
+        <p>Raw ROS includes Inner Zeros by default. If phase in/out is set to system default, this calculation will use the timeline specified in the scenario instead. Phase in will be the first sale within the time frame and phase out date will be the last sale within the time frame.</p>
+        <p>•	Exclude: exclude weeks in the timeframe with 0 sales.</p>
+        <p>•	Include: include weeks in the timeframe with 0 sales.</p>
+        <p>•	Exclude: If No Stock On Hand: If SOH was 0 for that week, it will exclude the week. Otherwise, include the week as 0 sales.</p>
+        <h2>Include Values Outside Phase In/Out</h2>
+        <p>Raw ROS includes Outer Zeroes by default.</p>
+        <p>If phase in/out is set to system default, this calculation will use the timeline specified in the scenario instead. Phase in will be first sale within the time frame and phase out date will be the last sale within the timeframe. For example, the timeframe is past 365 days and last sale was past 20 days. The 20 days since last sale to today will be considered outer values.</p>
+        <p>Sometimes, the final week of a partial-period will be deliberately dropped in cases where the ROS calculation was run mid-week and half a week of sales can cause a false drop in sales. For historical data, it could easily indicate a stock out as well; we were selling product, then ran out, so sales stopped. Thus, we ignore the bucket with that phase out / last sale when calculating ROS.</p>
+        <p>•	Exclude: exclude all sales history outside of phase in/out days</p>
+        <p>•	Include: include all sales history outside of phase in/out days</p>
+        <p>•	Include If Non-Zero: If there are non-zero sales outside of phase in/out days, include those</p>
+        <p>•	Include If Non-Zero Or Site Has Stock On Hand: Condition of “Include If Non-Zero” in addition to include 0s if there are SOH</p>
+    </body>
+</html>

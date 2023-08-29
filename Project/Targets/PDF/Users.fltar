@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  ConditionTagExpression="exclude[&quot;General.Exclude from Print&quot;] "
+  MasterToc="/Project/TOCs/Users.fltoc"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="true"
+  RemoveImagesFromHeadings="true"
+  EmbedImages="true"
+  conditions="">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Variables>
+    <Variable
+      Name="JustEnough Variables/Printed Manual Title">Users</Variable>
+    <Variable
+      Name="Variables/BookTitle">Users</Variable>
+  </Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF Output.fldes"
+      Publish="true" />
+  </Destinations>
+  <PDF
+    InitialMagnification="Fit"
+    PageLayout="OneColumn" />
+</CatapultTarget>

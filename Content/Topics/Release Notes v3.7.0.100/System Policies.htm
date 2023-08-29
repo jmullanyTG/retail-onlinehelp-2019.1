@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="852" MadCap:lastWidth="1246">
+    <head>
+    </head>
+    <body>
+        <h1>System Policies</h1>
+        <p>The following system policies have been added. </p>
+        <h2>Module: Assortment</h2>
+        <h3>System Policy Name:</h3>
+        <p>Allow supplemental commitments</p>
+        <h3>System Name:</h3>
+        <p>Assortment.OrderManagerAddAssortmentPlanCommit.AllowSupplementalCommits</p>
+        <h3>Description:</h3>
+        <p>Allows for supplemental commitment orders for a period which already contains a confirmed commitment order. The possible settings are:</p>
+        <ul>
+            <li> 0 = Do Not Allow.  </li>
+            <li>1 = Allow Supplemental Commits and Enforce Constraints on Supplemental Commits. </li>
+            <li> 2 = Allow Supplemental Commits and Do Not Enforce Constraints on Supplemental Commits.</li>
+        </ul>
+        <h3>System Policy Name:</h3>
+        <p>PID - Denominator Lower Board</p>
+        <h3>System Name:</h3>
+        <p>Allocate.PID.DenominatorLowerBound</p>
+        <h3>Description</h3>
+        <p>Minimum denominator for PID calculations. </p>
+        <ul>
+            <li>If the original forecast is below this value, then the PID retrending might trend towards zero. </li>
+            <li>If the original forecast is too small, then the PID retrend might over-predict.</li>
+        </ul>
+    </body>
+</html>

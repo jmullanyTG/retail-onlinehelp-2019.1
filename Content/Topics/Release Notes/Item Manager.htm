@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="885" MadCap:lastWidth="1358">
+    <head>
+    </head>
+    <body>
+        <h1>Inventory Manager <MadCap:conditionalText MadCap:conditions="General.Temp Exclude"><MadCap:conditionalText MadCap:conditions="General.Exclude from Print">was aka Item Manager</MadCap:conditionalText></MadCap:conditionalText></h1>
+        <p>The following enhancements are now available in the Inventory Manager solution. </p>
+        <h2>Enhancements to Stock Holding Projection Graph <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-58532</MadCap:conditionalText></h2>
+        <p>The Stock Holding Projection Graph has been enhanced as follows:</p>
+        <p>The Projection and Demand graphs have been combined into a single visualization called Projection. The grid remains unchanged. Within the Projection graph, users can select and de-select individual series. The graph re-draws based on the selected series. The following new system policy governs which series are returned to the Stock Holding Projection Graph: </p>
+        <ul>
+            <li>Stock Holding Projection Graph</li>
+        </ul>
+        <p>Additionally,</p>
+        <ul>
+            <li>The Calculate by Day button has been renamed Calculate.</li>
+            <li>The Calculate by Period button has been removed.</li>
+            <li>A&#160;new button labeled Advanced Calculate has been added to the Stock Holding Projection screen. Clicking the Advanced Calculate button opens up the Replenish Task dialog. The new Advanced Calculate button is controlled by the following new user right:<ul><li>Allow Stock Projection Calculation Using Advanced Calc button</li></ul></li>
+        </ul>
+        <h2>Forecast Fulfillment Split Factors view <MadCap:conditionalText MadCap:conditions="General.Exclude from Print,General.Temp Exclude">DMDEV-58519</MadCap:conditionalText></h2>
+        <p>A new tab labeled Forecast Fulfillment Split Factors has been added to the to the Item Manager solution. This tab shows the calculated fulfillment split factors. The split factors are displayed based on Item Master and are read-only. If fulfillment data exists, then checking the "Show Zero Values" parameter displays any destination sites that have that Item Master but don't have a split factor. If fulfillment data doesn't exist, then the pivot grid only shows the Product Description column while Site, Destination, and Split Factors are all null.</p>
+        <h3 MadCap:conditions="General.Temp Exclude,General.Exclude from Print">Forecast Fulfillment Split Factors tab</h3>
+        <p MadCap:conditions="General.Exclude from Print,General.Temp Exclude">
+            <img src="../../Resources/Images/Item Manager/Forecast Fulfillment Split Factors tab.png" />
+        </p>
+    </body>
+</html>
